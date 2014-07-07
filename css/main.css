@@ -116,6 +116,11 @@ textarea {
     font-size:44px;
     padding:5px 10px 5px 10px;
 }
+.small-light-blue {
+    font-size: 14px;
+    color: #003f87;
+    font-weight: 200;
+}
 .thin-blue-medium {
     font-size:20px;
     font-weight:200;
@@ -212,7 +217,7 @@ textarea {
 .custom-navigation-row {
     position: absolute;
     background-color: #fff;
-    width: 888px;
+    width: 920px;
     padding: 6px 6px 6px 6px;
     z-index: 99999;
     left: 0;
@@ -238,7 +243,29 @@ textarea {
 /*End Custom Navigation*/
 
 /* Custom */
-
+.mount-bay-row {
+    height:600px;
+    width:100%;
+    background:url('../img/Location-PhotoBG.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.small-wrap {
+    max-width:150px;
+}
+.italic {
+    padding-top:10px;
+    display:inline-block;
+    font-style:italic;
+}
+.quote-img {
+    padding-top:80px;
+    background:url('../img/Icon-QuoteDkBlue.png') left top no-repeat;
+}
 .first {
     padding-left:0;
 }
@@ -277,6 +304,9 @@ textarea {
 .mtop40 {
     margin-top:40px !important;
 }
+.mtop60 {
+    margin-top:60px !important;
+}
 .pbot20 {
     padding-bottom:20px !important;
 }
@@ -301,10 +331,18 @@ textarea {
 .top-employer p {
     margin-bottom: 0;
 }
-
+.company-logo{
+    max-width:23%;
+}
+.company-logos img {
+    margin-right:30px;
+}
+.company-logos img:last-child {
+    margin-right:0;
+}
 .company-logos {
     padding:40px 0;
-    width:655px;
+    width:686px;
     margin:0 auto;
 }
 /*End Custom */
@@ -312,6 +350,10 @@ textarea {
 /* ==========================================================================
    Bootstrap Overrides
    ========================================================================== */
+.row {
+    /*padding-left:20px;*/
+}
+
 .navbar-default .navbar-nav>li>a {
     color: #333;
 }
@@ -513,7 +555,9 @@ textarea {
 
 }
 @media (max-width: 715px) {
-
+    .container {
+        padding-left:15px !important;
+    }
     .western-message {
         margin-top:200px !important;
     }
@@ -525,13 +569,15 @@ textarea {
     }
     .company-logo {
         display:block;
-        margin:0 auto;
+        margin:0 auto !important;
         padding:10px 0;
     }
 
 }
 @media (max-width: 400px) {
-
+    .container {
+        padding-left:15px;
+    }
     .video_wrapper {
         height: 380px;
     }
