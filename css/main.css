@@ -18,7 +18,7 @@ textarea {
     color: #222;
 }
 html, body, .container {
-    min-width:380px;
+    /*min-width:380px;*/
 }
 
 html {
@@ -236,7 +236,7 @@ textarea {
 .custom-navigation-row {
     position: absolute;
     background-color: #fff;
-    width: 920px;
+    min-width: 896px;
     padding: 6px 6px 6px 6px;
     z-index: 99999;
     left: 0;
@@ -267,6 +267,7 @@ textarea {
     top:0;
     width: 100%;
     height:51px;
+    z-index:999999 !important;
 }
 .fixedTop .blue-li-buttons {
     width:968px;
@@ -285,7 +286,7 @@ textarea {
 }
 .mount-bay-row {
     height:600px;
-    width:100%;
+    /*width:100%;*/
     background:url('../img/Location-PhotoBG.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -316,6 +317,9 @@ textarea {
     width:90%;
     margin:0 auto;
     padding:20px 0;
+}
+.no-rmargin {
+    margin-right:0 !important;
 }
 .no-mbot, .mbot0 {
     margin-bottom:0 !important;
@@ -411,7 +415,7 @@ textarea {
 .westerns-program {
     border-top:2px solid #fff;
     border-bottom:2px solid #fff;
-    width:400px;
+    width:90%;
     margin:0 auto;
     text-align:center;
     padding:10px 0;
@@ -426,7 +430,8 @@ textarea {
    Bootstrap Overrides
    ========================================================================== */
 .row {
-    /*padding-left:20px;*/
+    margin-left:0 !important;
+    margin-right:0 !important;
 }
 .navbar-default .navbar-nav>li>a {
     color: #333;
